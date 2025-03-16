@@ -358,7 +358,7 @@
         },
         {
           "name" : "Install dependencies",
-          "run" : "sudo apt-get update && sudo apt-get install build-essential libsdl2-dev"
+          "run" : "apt-get -y update && apt-get -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' install build-essential libsdl2-dev"
         },
         {
           "name" : "Set up Homebrew environment for Github Actions",
